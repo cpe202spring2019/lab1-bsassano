@@ -6,7 +6,7 @@ def max_list_iter(int_list):  # must use iteration not recursion
        raise ValueError("Empty List")
    if len(int_list) == 0:
        return(None)
-   min=0
+   min=int_list[0]
    for i in int_list:
        if i > min:
            min=i
