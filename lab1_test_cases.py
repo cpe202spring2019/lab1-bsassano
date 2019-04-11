@@ -13,7 +13,10 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(max_list_iter([1,3,5]),5)
         self.assertEqual(max_list_iter([5,3,1]),5)
         self.assertEqual(max_list_iter([1,5,3]),5)
+
         self.assertEqual(max_list_iter([-1,-2,-3]),-1)
+        self.assertEqual(max_list_iter([-3,-1,-2]), -1)
+        self.assertEqual(max_list_iter([-3,-2,-1]), -1)
 
         self.assertEqual(max_list_iter([1,1,1,1,1]),1)
         self.assertEqual(max_list_iter([1,4,2,8,6,9]),9)
